@@ -1,0 +1,333 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 233, 233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    background-color: #444444;
+}
+
+.icone1{
+    width: 200px;
+    height: 200px;
+    display: grid;
+    margin: 0 auto;
+    padding: 80px;
+    
+}
+
+/* FIM DO HEADER
+
+ ---------------------------------
+
+CSS DA PÁGINA INICIAL */
+
+main{
+    margin-top: 150px;
+}
+
+p{
+    text-align: center;
+    color: #444444;
+    font-size: 15px;
+}
+
+.finn{
+    width: 160px;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 350px;
+    padding: 5px;
+}
+
+.text{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    margin: 0 auto;
+    max-width: 245px;
+    padding: 5px;
+}
+
+.strong1{
+    font-size: 30px;
+}
+
+.ultimo{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    margin: 0 auto;
+    max-width: 290px;
+    padding: 30px;
+}
+
+.finn2{
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 5px;
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #444444;
+}
+
+@media(min-width: 600px){
+    .finn{
+        width: 160px;
+        height: 160px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        margin: 0 auto;
+        max-width: 450px;
+        padding: 5px;
+    }
+    
+    .text{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        margin: 0 auto;
+        max-width: 390px;
+        padding: 5px;
+    }
+
+    .ultimo{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        margin: 0 auto;
+        max-width: 420px;
+        padding: 30px;
+    }
+    
+    .finn2{
+        width: 200px;
+        height: 200px;
+        display: grid;
+        grid-gap: 10px;
+        margin: 0 auto;
+        max-width: 400px;
+        padding: 5px;
+    }
+}
+
+@media(min-width: 1000px){
+    .finn{
+        width: 160px;
+        height: 160px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 350px;
+        padding: 5px;
+    }
+    
+    .text{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 245px;
+        padding: 5px;
+    }
+    
+    .ultimo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        margin: 0 auto;
+        max-width: 790px;
+        padding: 90px;
+    }
+    
+    .finn2{
+        width: 200px;
+        height: 200px;
+        display: grid;
+        grid-gap: 10px;
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 5px;
+    }
+    
+}
+
+/* FIM DA PÁGINA INICIAL 
+
+------------------------------------
+
+COMEÇO DA PÁGINA SOBRE*/
+
+.imgsobre{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 15px;
+}
+
+.imgsobre img{
+    width: 250px;
+    height: 250px;
+    display: grid;
+    grid-gap: 10px;
+    margin: 0 auto;
+    max-width: 350px;
+    padding: 15px;
+}
+
+.strong2{
+    font-size: 20px;
+}
+
+.textsobre{
+    text-align: justify;
+}
+
+@media(min-width: 600px){
+    .imgsobre{
+        display: grid;
+        grid-gap: 10px;
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 25px;
+    }
+}
+
+@media(min-width: 1000px){
+    .imgsobre{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin: 0 auto;
+        max-width: 850px;
+        padding: 25px;
+    }
+    .imgsobre img{
+        margin-top: -50px;
+    }
+}
+
+/* FIM DA PÁGINA SOBRE
+
+--------------------------------
+
+COMEÇO DA PÁGINA PROJETOS */
+
+.item1{
+    margin-top: 100px;
+}
+
+.item label{
+    display: block;
+    padding: 10px;
+    background-color: #999999;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333333;
+    border-bottom: solid 2px #aaaaaa;
+}
+
+.item label:hover{
+    background-color: #ad2929;
+}
+
+.item ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .4s linear;
+}
+
+.item input{
+    display: none;
+}
+
+.item ul li a{
+    width: 100%;
+    height: 20px;
+    display: block;
+    text-decoration: none;
+    border-bottom: solid 2px #ad2929;
+}
+
+.item input:checked ~ ul{
+    height: auto;
+    max-height: 200px;
+    transform: all;
+}
+
+.li{
+    max-width: 300px;
+}
+
+@media(min-width: 400px){
+    .li{
+        max-width: 380px;
+    }
+}
+
+@media(min-width: 500px){
+    .li{
+        max-width: 480px;
+    }
+}
+
+@media(min-width: 600px){
+    .li{
+        max-width: 580px;
+    }
+}
+
+@media(min-width: 700px){
+    .li{
+        max-width: 680px;
+    }
+}
+
+@media(min-width: 800px){
+    .li{
+        max-width: 780px;
+    }
+}
+
+@media(min-width: 900px){
+    .li{
+        max-width: 880px;
+    }
+}
+@media(min-width: 1000px){
+    .li{
+        max-width: 980px;
+    }
+}
+@media(min-width: 1100px){
+    .li{
+        max-width: 1080px;
+    }
+}
+@media(min-width: 1200px){
+    .li{
+        max-width: 1180px;
+    }
+}
+
+
+
+
+
+
